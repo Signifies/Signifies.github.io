@@ -42,8 +42,8 @@ h5{
 
 ul {
   font-size: 16px;
-  text-align: justify;
-  font-family: monospace;
+  text-align: center;
+  font-family: sans-serif;
   color: #93a1a1	; /*#657b83*/
 }
 
@@ -57,10 +57,10 @@ ul {
 */
 
 p {
-  font-size: 19px;
+  font-size: 20px;
   text-align: center;
   font-family: monospace;
-  color: white;
+  color: black;
   /*#657b83*/
 }
 
@@ -79,6 +79,9 @@ address {
 
 
 body {
+  background: url("https://i.imgur.com/c1qdh6e.png");
+  /*
+  background: url("https://i.imgur.com/prCkFvd.jpg");
   background: url("https://i.imgur.com/Dw6L2H9.png");
-  */background-color:	#073642; */
+  background-color:	#073642; */
 }
