@@ -16,10 +16,10 @@ h2,h3 {
 
 .text{
   display: inline-block;
-  width: 50%;
+  width: 35%;
 }
 
-h3{
+h4{
   color: orange 		;
 }
 
@@ -79,7 +79,7 @@ address {
 
 
 body {
-  background-color: black;
+  background-color: #31363b;
   /*
   background: url("https://i.imgur.com/c1qdh6e.png");
   background: url("https://i.imgur.com/prCkFvd.jpg");
