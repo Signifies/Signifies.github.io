@@ -1,88 +1,47 @@
-
-
-h2,h3 {
-  text-align: left;
-  font-family: arial;
-  font-size: 20px;
-  color: 		#657b83; 	/*#93a1a1;*/
-  padding: 5px 5px 5px 5px;
+body {
+  background-color:#e6dbc9 /*#C3B091;*/
 }
 
-.text-container {
-  text-align: left;
-  padding-left: 10px;
-
+h2{
+  font-family: Roboto;
+  margin-top:5%;
+  margin-left: 10%;
 }
 
-.text{
-  display: inline-block;
-  width: 40%;
+hr {
+  margin-right: 50%;
 }
-
-h4{
-  color: orange 		;
-}
-
-h5{
-  text-align: left;
-  font-family: arial;
-  font-size: 15px;
-  color: 		white; 	/*#93a1a1;*/
-  padding: 1px 1px 1px 1px;
-}
-
-/*
-#first{
-  font-size: 18px;
-  text-align: center;
-  font-family: monospace;
-  color: #657b83	; #657b83
-}
-*/
-
-ul {
-  font-size: 16px;
-  text-align: left;
-  font-family: sans-serif;
-  color: #93a1a1	; /*#657b83*/
-}
-
-/*
-.border {
-  border-style: solid;
-  border-color: darkgreen;
-  border-width: thin;
-  border-radius: 10px;
-}
-*/
 
 p {
-  font-size: 15px;
-  text-align: justify;
+  font-family: Roboto;
+}
+
+details{
+  margin-left: 17%;
+font-size: 16px;
   font-family: monospace;
-  color: white;
-  /*#657b83*/
+  padding-bottom: 10px;
 }
 
-img {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+summary {
+  font-style: monospace;
+  color: #7B3F00;
+  font-size: 18px;
 }
 
-address {
-  font-size: 15px;
-  text-align: justify;
-  font-family: monospace;
-  color: #93a1a1	; /*#657b83*/
+mark{
+  background-color: #E9E0D0;
 }
 
 
-body {
-  background-color: #31363b;
-  /*
-  background: url("https://i.imgur.com/c1qdh6e.png");
-  background: url("https://i.imgur.com/prCkFvd.jpg");
-  background: url("https://i.imgur.com/Dw6L2H9.png");
-  background-color:	#073642; */
+.primary-container {
+  text-align: left;
+
+}
+
+.home-content {
+    text-align: right;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 7%;
 }
