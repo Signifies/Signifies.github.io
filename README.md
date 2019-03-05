@@ -4,5 +4,7 @@ Have fun cursing my [shit](https://signifies.github.io) code.
 ### TODO
 - [ ] Nav bar.
 - [ ] Page about my rice.
-- [ ] Other pages and details.
-- [ ] Tools page
+- [x] Other pages and details.
+- [x] Tools page
+- [ ] Access to sites code.
+- [ ] Software knowledge (general knowledge)
