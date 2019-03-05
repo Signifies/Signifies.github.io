@@ -8,13 +8,31 @@ h2{
   margin-left: 10%;
 }
 
+hr {
+  margin-right: 50%;
+}
+
 p {
   font-family: Roboto;
 }
 
 details{
   margin-left: 17%;
+font-size: 16px;
+  font-family: monospace;
+  padding-bottom: 10px;
 }
+
+summary {
+  font-style: monospace;
+  color: #7B3F00;
+  font-size: 18px;
+}
+
+mark{
+  background-color: #E9E0D0;
+}
+
 
 .primary-container {
   text-align: left;
@@ -26,12 +44,4 @@ details{
     display: inline-block;
     margin-top: 25px;
     margin-left: 7%;
-}
-
-summary {
-  font-style: monospace;
-}
-
-mark{
-  background-color: #E9E0D0	;
 }
