@@ -31,3 +31,7 @@ details{
 summary {
   font-style: monospace;
 }
+
+mark{
+  background-color: tan;
+}
