@@ -1,0 +1,33 @@
+body {
+  background-color:#e6dbc9 /*#C3B091;*/
+}
+
+h2{
+  font-family: Roboto;
+  margin-top:5%;
+  margin-left: 10%;
+}
+
+p {
+  font-family: Roboto;
+}
+
+details{
+  margin-left: 17%;
+}
+
+.primary-container {
+  text-align: left;
+
+}
+
+.home-content {
+    text-align: right;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 7%;
+}
+
+summary {
+  font-style: monospace;
+}

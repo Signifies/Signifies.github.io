@@ -5,3 +5,4 @@ Have fun cursing my [shit](https://signifies.github.io) code.
 - [ ] Nav bar.
 - [ ] Page about my rice.
 - [ ] Other pages and details.
+- [ ] Tools page
