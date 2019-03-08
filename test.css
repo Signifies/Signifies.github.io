@@ -17,10 +17,9 @@ p {
 }
 
 details{
-  margin-left: 17%;
-font-size: 16px;
+  font-size: 16px;
   font-family: monospace;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 summary {
@@ -37,6 +36,12 @@ mark{
 .primary-container {
   text-align: left;
 
+}
+
+.sidebar {
+  text-align: left;
+  position: fixed;
+  margin-left: 15%;
 }
 
 .home-content {

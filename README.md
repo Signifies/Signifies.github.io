@@ -8,3 +8,4 @@ Have fun cursing my [shit](https://signifies.github.io) code.
 - [x] Tools page
 - [ ] Access to sites code.
 - [ ] Software knowledge (general knowledge)
+- [ ] Projects tab
