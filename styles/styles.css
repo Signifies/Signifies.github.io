@@ -7,6 +7,15 @@ ul {
   border-radius: 8px;
 }
 
+h4 {
+  text-align: left;
+}
+
+#id {
+  text-align: left;
+  color: black;
+}
+
 li {
   float: left;
    border-right: 1px solid #bbb;
