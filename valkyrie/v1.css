@@ -1,0 +1,13 @@
+body {
+  background-color: black; /*#C3B091;*/
+}
+
+h4 {
+  color: Red;
+}
+
+.content{
+  margin: 10px;
+  padding-left: 10px;
+}
+/*Red boarder around a content div.*/

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="v1.css">
+    <title>Data</title>
+  </head>
+  <body>
+    <h4>Monitor Data page</h4>
+    <hr style="color: red;">
+    <!--
+    Put a show/hide data button here.
+    -->
+    <div class="content" style="border: 1px solid red;">
+      <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-SBUX/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+    {
+    "symbol": "NASDAQ:SBUX",
+    "width": 350,
+    "height": 220,
+    "locale": "en",
+    "dateRange": "1d",
+    "colorTheme": "dark",
+    "trendLineColor": "rgba(151, 0, 0, 1)",
+    "underLineColor": "rgba(55, 166, 239, 0.15)",
+    "isTransparent": true,
+    "autosize": false,
+    "largeChartUrl": ""
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+  <br>
+  <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+  {
+  "symbol": "NASDAQ:AAPL",
+  "width": "350",
+  "height": "220",
+  "locale": "en",
+  "dateRange": "1d",
+  "colorTheme": "dark",
+  "trendLineColor": "rgba(151, 0, 0, 1)",
+  "underLineColor": "rgba(203, 203, 203, 0.15)",
+  "isTransparent": true,
+  "autosize": false,
+  "largeChartUrl": ""
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+    </div>
+  </body>
+</html>
