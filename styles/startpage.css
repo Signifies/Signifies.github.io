@@ -52,8 +52,14 @@ a:visited {
 .cat {
   font-weight: 700;
 }
-
-
 p {
   text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
 }
