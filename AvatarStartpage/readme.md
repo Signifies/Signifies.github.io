@@ -1,1 +1,1 @@
-![Startpage](https://imgur.com/a/a0bRXar)
+![](https://imgur.com/a/a0bRXar?raw=true)
