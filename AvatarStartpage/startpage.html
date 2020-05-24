@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+  </head>
+  <body>
+
+
+    </div>
+    <script type="text/javascript">
+ var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+ var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+ function GetClock(){
+ var d=new Date();
+ var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+ var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+ if(nmin<=9) nmin="0"+nmin;
+ if(nsec<=9) nsec="0"+nsec;
+
+ var clocktext=" "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+"";
+ document.getElementById('clockbox').innerHTML=clocktext;
+ }
+
+ GetClock();
+ setInterval(GetClock,1000);
+ </script>
+ <!--
+   End of clock widget. <div id="clockbox">
+ -->
+    <div class="box">
+      <div class="hvr-grow">
+			<h1>School</h1>
+			<ul>
+				<li><a href="https://blackboard.irsc.edu/">blackboard</a></li>
+				<li><a href="https://irsc.okta.com/app/UserHome">applications</a></li>
+				<li><a href="https://blackboard.irsc.edu/webapps/blackboard/execute/announcement?method=search&context=course_entry&course_id=_91560_1&handle=announcements_entry&mode=view">mac1105</a></li>
+			</ul>
+		</div>
+		<div class="hvr-grow">
+			<h1>work</h1>
+			<ul>
+				<li><a href="https://www.icloud.com/mail/">email</a></li>
+				<li><a href="https://starbucks-wfmr.jdadelivers.com/retail">schedule</a></li>
+				<li><a href="https://mypartnerinfo-ext.starbucks.com/partnerportal">portal</a></li>
+			</ul>
+		</div>
+    <div class="hvr-grow">
+      <h1>other</h1>
+      <ul>
+      <li id="clockbox"></li>
+      </ul>
+    </div>
+    <div class="hvr-grow">
+      <h1>social</h1>
+      <ul>
+        <li><a href="https://github.com/">github</a></li>
+        <li><a href="https://old.reddit.com/">reddit</a></li>
+        <li><a href="https://www.instagram.com/">instagram</a></li>
+        <li><a href="https://discordapp.com/channels/@me">discord</a></li>
+        <li><a href="https://youtube.com">youtube</a></li>
+      </ul>
+    </div>
+    <form action="https://duckduckgo.com/" method="GET" class="hvr-shrink">
+			<input type="text" name="q" placeholder="DuckDuckGo" autofocus="autofocus">
+		</form>
+    </div>
+
+    <address>
+      <div class="theme">
+        <details >
+          <summary>style credit</summary>
+          <ul>
+            <li>
+              <span style="color: var(--color0)">█</span>
+              <span style="color: var(--color1)">█</span>
+              <span style="color: var(--color2)">█</span>
+              <span style="color: var(--color3)">█</span>
+              <span style="color: var(--color4)">█</span>
+              <span style="color: var(--color5)">█</span>
+              <span style="color: var(--color6)">█</span>
+              <span style="color: var(--color7)">█</span>
+              <span style="color: var(--color8)">█</span>
+              <span style="color: var(--color9)">█</span>
+              <span style="color: var(--color10)">█</span>
+              <span style="color: var(--color11)">█</span>
+              <span style="color: var(--color12)">█</span>
+              <span style="color: var(--color13)">█</span>
+              <span style="color: var(--color14)">█</span>
+              <span style="color: var(--color15)">█</span>
+              <span style="color: var(--foreground)">█</span>
+              <span style="color: var(--background)">█</span>
+            </li>
+            <li style="color:var(--color7)">Thanks to <a href="https://qhungg289.github.io/startpage/">qhungg289</a> </li>
+          </ul>
+          </div>
+        </details>
+    </address>
+  </body>
+</html>

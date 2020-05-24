@@ -1,0 +1,123 @@
+@import "colors.css";
+* {
+      font-family: "Iosevka";
+      font-size: 20px;
+}
+body {
+  background-image: url('Avatar.jpg');
+  background-color: var(--color3);
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size:cover;
+
+}
+
+.theme {
+  text-align: center;
+}
+
+div .hvr-grow {
+	background-color: var(--color1);
+	border: solid 4px rgba(255, 255, 255, 0.8);
+	border-radius: 3px;
+	margin-top: 24%;
+	margin-bottom: 0%;
+	display: inline-block;
+	margin-left: 6%;
+	margin-right: -30px;
+	width: 140px;
+	text-align: center;
+  position: inherit;
+}
+
+
+h1 {
+	font-style: italic;
+	color: var(--color13);
+	font-size: 1rem;
+	text-align: center;
+}
+
+ul {
+	padding-inline-start: 0;
+	list-style: none;
+}
+
+a {
+	display: block;
+	line-height: 2em;
+	color: var(--color7);
+	font-size: 1rem;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	color: var(--color5)
+}
+
+/*Animation*/
+.hvr-grow {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.5s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.hvr-shrink {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+address {
+  position: absolute;
+  bottom: 0;
+}
+
+summary {
+  color: var(--color5)
+}
+
+#clockbox {
+  color: var(--color5);
+  font-size: 20px;
+  text-align: left;
+  margin-left: : 5px;
+}
+
+form {
+	float: left;
+  position: sticky;
+	margin-top: 4%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+input {
+	border: solid 4px rgba(255, 255, 255, 0.8);
+	padding: 10px;
+	width: 160px;
+	background-color: var(--bgcolor);
+	color: white;
+	font-family: var(--font);
+}

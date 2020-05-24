@@ -1,16 +1,16 @@
 /*~/.cache/wal/colors.css*/
 /*@import "/home/signifies/.cache/wal/colors.css";*/
-@import "../colors/lime.css";
+@import "../colors/av.css";
 * {
       font-family: "Iosevka";
       font-size: 20px;
 }
 
+
 html {
   background-color: var(--background);
   color: var(--forground);
 }
-
 .data {
   width: 700px;
   right: 50%;
