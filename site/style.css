@@ -1,16 +1,16 @@
 /*~/.cache/wal/colors.css*/
-/*@import "/home/signifies/.cache/wal/colors.css";*/
-@import "../colors/av.css";
+@import "../colors/green.css";
+
 * {
       font-family: "Iosevka";
       font-size: 20px;
 }
 
-
 html {
   background-color: var(--background);
   color: var(--forground);
 }
+
 .data {
   width: 700px;
   right: 50%;
@@ -51,15 +51,21 @@ a:visited {
 
 .cat {
   font-weight: 700;
+  color: var(--foreground);
 }
+
+
 p {
   text-align: center;
 }
 
-.info {
-  text-align: center;
+details{
+  color: var(--foreground);
 }
 
-ul {
-  list-style: none;
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 55%;
 }
