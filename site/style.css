@@ -69,3 +69,16 @@ footer {
   right: 0;
   width: 55%;
 }
+.tradingview-widget-container {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.tradingview-widget-container__widget {
+  display: inline-block;
+}
+
+.tradingview-widget-container__widget{
+  border-style: inset;
+  text-align: center;
+}
