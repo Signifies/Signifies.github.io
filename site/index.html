@@ -47,9 +47,31 @@
       }
         </script>
       </div>
+      <script type="text/javascript">
+      var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+      var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
 
+      function GetClock(){
+      var d=new Date();
+      var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+      var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+      if(nmin<=9) nmin="0"+nmin;
+      if(nsec<=9) nsec="0"+nsec;
+
+      var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+"";
+      document.getElementById('clockbox').innerHTML=clocktext;
+      }
+
+      GetClock();
+      setInterval(GetClock,1000);
+      </script>
+      <!--
+        End of clock widget.
+      -->
     </div>
     <!-- TradingView Widget BEGIN -->
+    <div id="clockbox">
+    </div>
 
   </body>
   <div class="data">
@@ -62,8 +84,8 @@
 
     <div class="items">
       <p>
-        <span style="color: var(--color1)">[</span><a href="https://blackboard.irsc.edu/">Blackboard</a><span style="color: var(--color1)">]</span>
-        <span style="color: var(--color3)">[</span><a href="https://irsc.okta.com/app/UserHome">Applications</a><span style="color: var(--color3)">]</span>
+        <span style="color: var(--color1)">[</span><a href="https://blackboard.irsc.edu/">blackboard</a><span style="color: var(--color1)">]</span>
+        <span style="color: var(--color3)">[</span><a href="https://irsc.okta.com/app/UserHome">applications</a><span style="color: var(--color3)">]</span>
         <span style="color: var(--color4)">[</span><a href="https://openvellum.ecollege.com/course.html?courseId=15785178&HepID=8917266b492d407f1e4e7b180f232d0c#10001">mac1105</a><span style="color: var(--color4)">]</span>
       </p>
       <p>
@@ -80,13 +102,10 @@
       </p>
       <p>
         <span style="color: var(--color1)">[</span><a href="https://old.reddit.com/r/archlinux/">arch</a><span style="color: var(--color1)">]</span>
-        <span style="color: var(--color4)">[</span><a href="https://old.reddit.com/r/biology/">biology</a><span style="color: var(--color4)">]</span>
-        <span style="color: var(--color5)">[</span><a href="https://old.reddit.com/r/chemistry/">chemistry</a><span style="color: var(--color5)">]</span>
-        <span style="color: var(--color4)">[</span><a href="https://old.reddit.com/r/mathematics/">mathematics</a><span style="color: var(--color4)">]</span>
-        <span style="color: var(--color5)">[</span><a href="https://old.reddit.com/r/math/">math</a><span style="color: var(--color5)">]</span>
         <span style="color: var(--color3)">[</span><a href="https://old.reddit.com/r/unixporn/">unix</a><span style="color: var(--color3)">]</span>
+        <span style="color: var(--color4)">[</span><a href="https://old.reddit.com/r/biology/">biology</a><span style="color: var(--color4)">]</span>
+        <span style="color: var(--color5)">[</span><a href="https://old.reddit.com/r/math/">math</a><span style="color: var(--color5)">]</span>
         <span style="color: var(--color6)">[</span><a href="https://old.reddit.com/r/languagelearning/">language learning</a><span style="color: var(--color6)">]</span>
-        <span style="color: var(--color3)">[</span><a href="https://old.reddit.com/r/privacy/">privacy</a><span style="color: var(--color3)">]</span>
       </p>
 
     </div>
@@ -99,5 +118,8 @@
   <span style="color: var(--color1)">[</span><a href="">LMS</a><span style="color: var(--color1)">]</span>
   <span style="color: var(--color3)">[</span><a href="">bio 1</a><span style="color: var(--color3)">]</span>
   <span style="color: var(--color4)">[</span><a href="">mat1033</a><span style="color: var(--color4)">]</span>
+
+  <span style="color: var(--color5)">[</span><a href="https://old.reddit.com/r/chemistry/">chemistry</a><span style="color: var(--color5)">]</span>
+  <span style="color: var(--color4)">[</span><a href="https://old.reddit.com/r/mathematics/">mathematics</a><span style="color: var(--color4)">]</span>
 
  -->
