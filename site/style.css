@@ -70,7 +70,7 @@ footer {
   width: 55%;
 }
 .tradingview-widget-container {
-  margin-top: 2%;
+  margin-top: 1%;
   text-align: center;
 }
 
@@ -81,4 +81,5 @@ footer {
 .tradingview-widget-container__widget{
   border-style: inset;
   text-align: center;
+  padding-bottom: 0%;
 }
