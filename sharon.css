@@ -1,0 +1,32 @@
+body {
+  background-image: url(cell.jpg);
+}
+
+h2{
+  text-align: center;
+  margin: 4%;
+}
+
+hr{
+  width: 50%
+}
+
+ul.h li {
+  font-size: 22px;
+  margin: 5px;
+  list-style-type: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: solid underline blue 5px;
+
+}
