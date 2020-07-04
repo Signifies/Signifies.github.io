@@ -5,10 +5,16 @@ body {
 h2{
   text-align: center;
   margin: 4%;
+  color: blue;
+}
+p {
+  text-align: center;
+  font-size: 18px;
+  color: white;
 }
 
 hr{
-  width: 50%
+  width: 40%
 }
 
 ul.h li {
@@ -17,10 +23,22 @@ ul.h li {
   list-style-type: none;
 }
 
+ul.c li {
+  font-size: 20px;
+  margin: 5px;
+  text-align: center;
+  color: white;
+}
+
+.content {
+  text-align: center;
+}
+
 a:link {
   text-decoration: none;
   color: black;
 }
+
 a:visited {
   text-decoration: none;
   color: black;
