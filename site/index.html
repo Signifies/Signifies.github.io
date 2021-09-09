@@ -13,7 +13,7 @@
         <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
         {
-        "symbol": "NASDAQ:AAPL",
+        "symbol": "EFT",
         "width": "350",
         "height": "220",
         "locale": "en",
@@ -26,13 +26,15 @@
         "largeChartUrl": ""
       }
         </script>
-      <!-- TradingView Widget END -->
+      <!-- TradingView Widget END
+      NASDAQ:<STOCK>
+     -->
       </div>
       <div class="tradingview-widget-container__widget">
         <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/CYDY/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
         {
-        "symbol": "CYDY",
+        "symbol": "BTC",
         "width": 350,
         "height": 220,
         "locale": "en",
@@ -51,7 +53,7 @@
         <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-SBUX/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
         {
-        "symbol": "NASDAQ:SBUX",
+        "symbol": "CYDY",
         "width": 350,
         "height": 220,
         "locale": "en",
@@ -65,6 +67,9 @@
       }
         </script>
       </div>
+
+
+<!--
       <script type="text/javascript">
       var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
       var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
@@ -83,37 +88,36 @@
       GetClock();
       setInterval(GetClock,1000);
       </script>
-      <!--
+
         End of clock widget.
       -->
-    </div>
+</div> <!-- < This Div is wierd. IDK why, but it keeps the summery tab at the bottom all the way to the left. I'm leaving it for now. -->
     <!-- TradingView Widget BEGIN -->
-    <div id="clockbox">
-    </div>
 
   </body>
   <div class="data">
     <div class="subjects">
       <p class="cat">School</p>
-      <p class="cat">Work</p>
+      <p class="cat">Personal</p>
       <p class="cat">Social</p>
       <p class="cat">Forums</p>
     </div>
 
     <div class="items">
       <p>
-        <span style="color: var(--color1)">[</span><a href="https://hacktoberfest.digitalocean.com/profile">hacktoberfest 2020</a><span style="color: var(--color1)">]</span>
         <!--
+        <span style="color: var(--color1)">[</span><a href="[content] ">hacktoberfest 2020</a><span style="color: var(--color1)">]</span>
         <span style="color: var(--color1)">[</span><a href="https://blackboard.irsc.edu/">blackboard</a><span style="color: var(--color1)">]</span> BB not accessable
       -->
-        <span style="color: var(--color3)">[</span><a href="https://irsc.okta.com/app/UserHome">IRSC portal</a><span style="color: var(--color3)">]</span>
-        <span style="color: var(--color4)">[</span><a href="https://openvellum.ecollege.com/course.html?courseId=16231383&OpenVellumHMAC=2b642cb8c6daf06926ae719c55e75ce8#10001">mac1105 (hopefully)</a><span style="color: var(--color4)">]</span>
+        <span style="color: var(--color3)">[</span><a href="https://irsc.okta.com/app/UserHome">portal</a><span style="color: var(--color3)">]</span>
+        <span style="color: var(--color4)">[</span><a href="https://irsc-asc.weebly.com/test-prep.html">ASC Lab</a><span style="color: var(--color4)">]</span>
       </p>
       <p>
           <span style="color: var(--color2)">[</span><a href="https://www.icloud.com/mail/">mail</a><span style="color: var(--color2)">]</span>
-          <span style="color: var(--color3)">[</span><a href="https://my.adp.com/">adp</a><span style="color: var(--color3)">]</span>
+          <span style="color: var(--color3)">[</span><a href="https://apod.nasa.gov/apod/astropix.html">APOD</a><span style="color: var(--color3)">]</span>
+          <span style="color: var(--color1)">[</span><a href="https://www.newyorkfed.org/research/snapshot">Econ snapshot</a><span style="color: var(--color1)">]</span>
           <!--
-          <span style="color: var(--color1)">[</span><a href="https://starbucks-wfmr.jdadelivers.com/retail">schedule</a><span style="color: var(--color1)">]</span>
+          <span style="color: var(--color1)">[</span><a href="https://www.newyorkfed.org/research/snapshot">Econ snapshot</a><span style="color: var(--color1)">]</span>
           <span style="color: var(--color5)">[</span><a href="https://mypartnerinfo-ext.starbucks.com/partnerportal">portal</a><span style="color: var(--color5)">]</span>
           //Starbucks is no longer a thing.
         -->
@@ -122,22 +126,44 @@
         <span style="color: var(--color5)">[</span><a href="https://github.com/Signifies">github</a><span style="color: var(--color5)">]</span>
         <span style="color: var(--color5)">[</span><a href="https://old.reddit.com/">reddit</a><span style="color: var(--color5)">]</span>
         <span style="color: var(--color1)">[</span><a href="https://www.instagram.com/">instagram</a><span style="color: var(--color1)">]</span>
-        <span style="color: var(--color4)">[</span><a href="https://discordapp.com/channels/@me">discord</a><span style="color: var(--color4)">]</span>
+        <span style="color: var(--color4)">[</span><a href="https://www.messenger.com">messenger</a><span style="color: var(--color4)">]</span>
         <span style="color: var(--color2)">[</span><a href="https://youtube.com">youtube</a><span style="color: var(--color2)">]</span>
       </p>
       <p>
-        <span style="color: var(--color1)">[</span><a href="https://old.reddit.com/r/archlinux/">arch</a><span style="color: var(--color1)">]</span>
+        <span style="color: var(--color1)">[</span><a href="https://old.reddit.com/r/amateurradio/">HAM</a><span style="color: var(--color1)">]</span>
         <span style="color: var(--color3)">[</span><a href="https://old.reddit.com/r/unixporn/">unix</a><span style="color: var(--color3)">]</span>
-        <span style="color: var(--color4)">[</span><a href="https://old.reddit.com/r/biology/">biology</a><span style="color: var(--color4)">]</span>
-        <span style="color: var(--color5)">[</span><a href="https://old.reddit.com/r/math/">math</a><span style="color: var(--color5)">]</span>
-        <span style="color: var(--color6)">[</span><a href="https://old.reddit.com/r/languagelearning/">language learning</a><span style="color: var(--color6)">]</span>
+        <span style="color: var(--color4)">[</span><a href="https://old.reddit.com/r/NFA/">NFA</a><span style="color: var(--color4)">]</span>
       </p>
 
     </div>
   </div>
   <footer>
     <details>
-      <summary>Old reference links</summary>
+      <summary></summary>
+      <ul style="text-align: left;">
+        <li>
+          <span>Color Scheme</span>
+          <span style="color: var(--color0)">█</span>
+          <span style="color: var(--color1)">█</span>
+          <span style="color: var(--color2)">█</span>
+          <span style="color: var(--color3)">█</span>
+          <span style="color: var(--color4)">█</span>
+          <span style="color: var(--color5)">█</span>
+          <span style="color: var(--color6)">█</span>
+          <span style="color: var(--color7)">█</span>
+          <span style="color: var(--color8)">█</span>
+          <span style="color: var(--color9)">█</span>
+          <span style="color: var(--color10)">█</span>
+          <span style="color: var(--color11)">█</span>
+          <span style="color: var(--color12)">█</span>
+          <span style="color: var(--color13)">█</span>
+          <span style="color: var(--color14)">█</span>
+          <span style="color: var(--color15)">█</span>
+          <span style="color: var(--foreground)">█</span>
+          <span style="color: var(--background)">█</span>
+        </li>
+      </ul>
+
       <a href="https://starbucks-wfmr.jdadelivers.com/retail">schedule</a> <span>,</span>
       <a href="https://mypartnerinfo-ext.starbucks.com/partnerportal">portal</a>
     </details>
@@ -146,7 +172,7 @@
 </html>
 
 <!--
-
+<span style="color: var(--color6)">[</span><a href="https://old.reddit.com/r/languagelearning/">language learning</a><span style="color: var(--color6)">]</span
   <span style="color: var(--color1)">[</span><a href="">LMS</a><span style="color: var(--color1)">]</span>
   <span style="color: var(--color3)">[</span><a href="">bio 1</a><span style="color: var(--color3)">]</span>
   <span style="color: var(--color4)">[</span><a href="">mat1033</a><span style="color: var(--color4)">]</span>
