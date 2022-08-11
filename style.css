@@ -1,92 +1,45 @@
+/*
+4rticle CSS
+*/
 
-/*./colors/colors.css ~/.cache/wal/colors.css when running locally on linux */
-@import "./colors/colors.css";
+/**
+Color Reference: https://www.color-hex.com/color/d2b48c
+*/
 body {
-  background-color: var(--background);
+  background-color: black;/*999988, 008080*/
+}
+p {
+  /*color: #999988;*/
+  color: #999988;
 }
 
-h3, h4{
-
-  color: var(--color4);
-}
-
-img {
-  max-height: 200px;
-  max-width: 200px;
-}
-
-table, th, td {
-  border-spacing: 5px;
-  border: none;
-  border-collapse: collapse;
+.primary-container {
   text-align: center;
-  color: var(--color4);
-
-  margin-bottom: 10px;
+  margin-top: 3%;
 }
 
-.content {
-  position: relative;
+.article-container {
+  border: 5px 10px 10px 5px;
+  margin-left: 5px;
+  border-style: double;
+  border-width: medium;
+  width: 50%;
+  background-color: tan;
+  padding: 15px 5px 5px 15px;
+  margin-left: 25%;
+  display: block;
+  position: fixed;
+}
+
+#intro {
   text-align: center;
-  margin-top: 10px;
 }
 
-.table-center {
-  margin-left: auto;
-  margin-right: auto;
-
+header {
+  text-align: center;
+  margin-top: 5px;
 }
 
-a {
-  text-decoration: none;
-  -webkit-transition: color 2s;
-  transition: color 2s;
-}
-
-
-a:link {
-  color: var(--foreground);
-}
-
-.weatherwidget-io {
-  max-width: 344px;
-  max-height: 205px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  border: 2px outset var(--color5);
-}
-
-input {
-    font-family: monospace;
-    background-color: #282828;
-    border-color: #282828;
-    border-style: solid;
-    color: #ebdbb2;
-    outline: none !important;
-    margin: 10px 10px 10px 10px;
-    opacity: 0.5;
-  }
-
-a:hover {
-  color: var(--color6);
-}
-
-a:visited {
-  color: var(--foreground);
-}
-
-details {
-  color: var(--color5);
-}
-
-footer {
-   position:absolute;
-   bottom:0;
-   margin-left: 5px;
-   margin-bottom: 5px;
-   width:100%;
-   height:40px;   /* Height of the footer */
-   color: var(--color6);
-   font-size: 15px;
+h1, h2, h3 {
+  text-align: center;
 }

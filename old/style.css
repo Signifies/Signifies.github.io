@@ -1,5 +1,5 @@
 /*~/.cache/wal/colors.css*/
-@import "./colors/lime.css";
+@import "$HOME.cache/wal/colors.css";
 
 * {
       font-family: "Iosevka";
