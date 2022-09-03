@@ -5,11 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="tools.html">toolbox</a></li>
+          <li><a href="images.html">images</a></li>
+          <li><a href="literature.html"></a>Citations</li>
+        </ul>
+      </nav>
+    </header>
   </head>
-  <body>
+  <body id="bkcolor">
+    <hr style="width: 50%;">
+      <h3 id="date"></h3>
+
+    <div class="settings-list">
+      <p>Prefs></p>
+      <table style="width:100%">
+        <tr>
+          <!--Make this toggleable. I remember there being a button for it.-->
+          <td><button type="button" onclick="showDate()">Date</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" onclick="darkMode()">Dark Mode</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" onclick="lightMode()">Light mode</button></td>
+        </tr>
+      </table>
+    </div>
+
     <div class="primary-container">
       <p>Testing text <em>on this line</em> </p>
       <p>Testing For blog + images. <p>
+      <p>For reference to my startpage click</p> <a href="https://signifies.github.io/lsp/startpage.html"> here.</a>
+        <script type="text/javascript" src=time.js></script>
+        <script>
+          function lightMode() {
+            document.getElementById("bkcolor").style.backgroundColor = "#FEFBEA";
+          }
+          function darkMode() {
+            document.getElementById("bkcolor").style.backgroundColor = "black";
+          }
+        </script>
+      <br>
+
+
       <details>
         <script src="https://gist.github.com/Signifies/8bbc929d83cc28f501182a05a1d0d4bf.js"></script>
       </details>
