@@ -46,7 +46,7 @@ p {
   padding: 15px 5px 5px 15px;
   margin-left: 25%;
   display: block;
-  position: fixed;
+  /*position: fixed;*/
 }
 
 .intro {
