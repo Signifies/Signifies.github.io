@@ -6,54 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet">
     <header>
+      <div class="settings-list">
+        <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+      </label>
+  </div>
+      </div>
       <nav>
         <ul>
           <li><a href="tools.html">toolbox</a></li>
           <li><a href="images.html">images</a></li>
-          <li><a href="literature.html"></a>Citations</li>
+          <li><a href="reading.html">articles</a></li>
+
         </ul>
       </nav>
     </header>
   </head>
-  <body id="bkcolor">
+  <body>
     <hr style="width: 50%;">
       <h3 id="date"></h3>
+<!-- DEBUG: style="width:45%;margin-left:25%;" -->
 
-    <div class="settings-list">
-      <p>Prefs></p>
-      <table style="width:100%">
-        <tr>
-          <!--Make this toggleable. I remember there being a button for it.-->
-          <td><button type="button" onclick="showDate()">Date</button></td>
-        </tr>
-        <tr>
-          <td><button type="button" onclick="darkMode()">Dark Mode</button></td>
-        </tr>
-        <tr>
-          <td><button type="button" onclick="lightMode()">Light mode</button></td>
-        </tr>
-      </table>
-    </div>
+<div class="intro">
+  <p>Evan <strong>||</strong> shxuesen. </p>
+  <p>Florida Man. Forklift certified. Pet alligators.</p>
+  <p>I like writing code and breaking Linux. Java, SQL/MySQL, and bash are my strengths</p>
+  <p>I am currently <em>looking</em> for dev work or internships and can be reached at <a href="mailto:signifiesdev@icloud.com?subject=Dev information">signifiesdev@icloud.com</a></p>
+  <ul>
+    <li><a href="https://github.com/Signifies/">github</a></li>
+    <li><a href="https://twitter.com/shxuesen/">bird app</a></li>
+  </ul>
+</div>
 
     <div class="primary-container">
-      <p>Testing text <em>on this line</em> </p>
-      <p>Testing For blog + images. <p>
-      <p>For reference to my startpage click</p> <a href="https://signifies.github.io/lsp/startpage.html"> here.</a>
+
+      <br>
+      <div class="article-container">
+
+        <h3>Projects</h3>
+        <p> <em>Nothing here yet, but lots on my <a href="https://github.com/Signifies/">github!</a> </em> </p>
+        <p style="text-align: left;">█</p>
+        <h3>Talking to myself</h3>
+        <!--START OF DETAILS.-->
+        <details>
+          <summary>Twitter 09-04-22</summary>
+          <p>So lately, I got a twitter, and I'm not sure it's good for my mental health</p>
+        </details>
+
+        <details>
+          <summary>Find the bug Friday</summary>
+            <details style="margin-left: 10px;">
+              <summary>OPEN TEH LINK</summary>
+              <img src="error.png" alt="Whoops"
+              height="80" width="600">
+            </details>
+        </details>
+
+        <p style="text-align: left;">█</p>
+      </div>
+
         <script type="text/javascript" src=time.js></script>
         <script>
-          function lightMode() {
-            document.getElementById("bkcolor").style.backgroundColor = "#FEFBEA";
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        const currentTheme = localStorage.getItem('theme');
+
+        if (currentTheme) {
+          document.documentElement.setAttribute('data-theme', currentTheme);
+
+          if (currentTheme === 'dark') {
+            toggleSwitch.checked = true;
           }
-          function darkMode() {
-            document.getElementById("bkcolor").style.backgroundColor = "black";
+        }
+
+        function switchTheme(e) {
+          if (e.target.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
           }
+          else {        document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+          }
+        }
+
+          toggleSwitch.addEventListener('change', switchTheme, false);
         </script>
       <br>
-
-
-      <details>
-        <script src="https://gist.github.com/Signifies/8bbc929d83cc28f501182a05a1d0d4bf.js"></script>
-      </details>
     </div>
   </body>
 </html>

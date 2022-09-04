@@ -5,35 +5,56 @@
 /**
 Color Reference: https://www.color-hex.com/color/d2b48c
 */
-body {
-  background-color: black;/*999988, 008080*/
+
+
+:root {
+  --primaryc: #d38d4a; /*#b7702d;/*cream color / not sure.*/
+  --secondaryc: black; /*Whatever accent or just black*/
+  --bg-color: #FEFBEA;/*cream color*/
+  --font-color: #9f7462;
+  --heading-color: black;
 }
+[data-theme="dark"] {
+  --primaryc: #b7702d; /*#999988;*/
+  --secondaryc: white;
+  --bg-color: black;
+  --font-color: #f5deb3; /*#a9703b;*/
+  --heading-color: tan; /*Or whatever I have set currently.*/
+}
+
+body {
+  background-color: var(--bg-color); /*999988, 008080*/
+  color: var(--font-color);
+}
+
 p {
   /*color: #999988;*/
-  color: #999988;
+  color: var(--font-color);
 }
 
 .primary-container {
   text-align: center;
-  margin-top: 3%;
 }
 
 .article-container {
-  border: 5px 10px 10px 5px;
+  /*border: 5px 10px 10px 5px;
   margin-left: 5px;
   border-style: double;
-  border-width: medium;
+  border-width: medium;*/
   width: 50%;
-  background-color: tan;
+  /*background-color: tan;*/
   padding: 15px 5px 5px 15px;
   margin-left: 25%;
   display: block;
   position: fixed;
 }
 
-#intro {
-  text-align: left;
+.intro {
+  text-align: justify;
+  margin: 10px;
+  font-size: 18px;
 }
+
 
 header {
   text-align: center;
@@ -53,13 +74,29 @@ nav ul li {
   padding: 3px;
   margin-left: 5px;
   border: none;
-  box-shadow: 3px 3px 4px black;
+  box-shadow: 3px 3px 4px var(--primaryc);
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+ul li {
+  list-style-type: none;
+  padding: 3px;
+
+  border: none;
+  box-shadow: 3px 3px 4px var(--primaryc);
   list-style: none;
   display: inline-block;
 }
 
 h1, h2, h3 {
   text-align: center;
+  color: var(--primaryc);
 }
 
 .buttons {
@@ -82,13 +119,87 @@ h1, h2, h3 {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--font-color);
 }
 
-details {
+hr {
+  color: var(--font-colo);
+}
+
+details{
   text-align: left;
+  color: var(--primaryc);
+  list-style: none
+
 }
 
 summary {
   list-style: none;
+  margin-bottom: 15px;
+}
+
+.bug-content {
+  text-align: center;
+}
+
+
+/*Style switch code.
+referenced from: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
+*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+  em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #b7702d;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #727272;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #FEFBEA;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
