@@ -8,10 +8,10 @@ Color Reference: https://www.color-hex.com/color/d2b48c
 
 
 :root {
-  --primaryc: #d38d4a; /*#b7702d;/*cream color / not sure.*/
+  --primaryc: black; /*#d38d4a #b7702d;/*cream color / not sure.*/
   --secondaryc: black; /*Whatever accent or just black*/
   --bg-color: #FEFBEA;/*cream color*/
-  --font-color: #9f7462;
+  --font-color: black;  /*#9f7462;*/
   --heading-color: black;
 }
 [data-theme="dark"] {
@@ -134,7 +134,7 @@ details{
 }
 
 summary {
-  list-style: none;
+  list-style: square;
   margin-bottom: 15px;
 }
 
